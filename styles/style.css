@@ -4,6 +4,11 @@ html, body{
     overflow: hidden;
     margin: 0;
 }
+@font-face{
+    font-family: mario;
+    src:url("../fonts/mario.ttf");
+}
+
 .grass, .sky, .road{
     position: relative;
 }
@@ -33,17 +38,16 @@ html, body{
 }
 
 button{
+    width: 150px;
+    margin:45%;
     cursor: pointer;
-    font-family: 'Indie Flower', cursive;
+    font-family: mario;
     float: right;    
     margin-top: 15px;
     border: none;
-    color: white;
-    background: red;
-    font-size: 30px;
-}
-button:hover{
-    background: green;
+    color: #999999;
+    background: seagreen;
+    font-size: 50px;
 }
 /* animation */
 .cloud{
@@ -67,7 +71,7 @@ button:hover{
     top: -30px;
     position: absolute;
     animation: drive 5s 1s linear infinite both,
-               jump 0.3s 3s ease ;
+               jump 0.3s 4s ease ;
 
 }
 .luigi{
@@ -82,6 +86,23 @@ button:hover{
     animation-fill-mode: both;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
+}
+.princess{
+    width: 100px;
+    height: 100px;
+    right: 0px;
+    top: -120px;
+    position: absolute;
+}
+.brick{
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    bottom: 50px;
+    right: 31%;
+}
+.tool{
+    animation: jump 0.3s 4s ease ;
 }
 /* keyframes */
 @keyframes drive{

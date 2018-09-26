@@ -1,29 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>1st trial</title>
+    <title>Mario Kart</title>
+    <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
-    <link rel="stylesheet" href="styles/style.css">
+    <!-- Icon -->
     <link rel="shortcut icon" href="images/Mario-icon.png" type="image/x-icon">
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="styles/animate.css">
+    <link rel="stylesheet" href="styles/style.css">
 </head>
-
 <body>
     <div class="sky">
         <img class="cloud" src="images/cloud.png" alt="cloud">
         <img class="cloud" src="images/cloud.png" alt="cloud">
     </div>
     <div class="grass">
-        <button>Press Start</button>
+        <img id="brick" class="brick" src="images/brick.png" alt="mario brick">
+        <button onclick="startBtn()" id="start" class="animated infinite flash super ">Start</button>
     </div>
     <div class="road">
         <div class="lines"></div>
-        <img class="animated  infinite  mario" src="images/mario.png" alt="mariocart">
-        <img class="luigi" src="images/luigi.png" alt="luigi">
+        <img id="mario" class="animated car" src="images/mario.png" alt="mariocart">
+        <img id="luigi" class=" car" src="images/luigi.png" alt="luigi">
+        <img class="princess" src="images/princess.png" alt="mario princess">
     </div>
+    <!-- Script -->
+    <script src="script/script.js"></script>
 </body>
-
 </html>
